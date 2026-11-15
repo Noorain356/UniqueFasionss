@@ -1,11 +1,11 @@
 {
   "services": {
     "backend": {
-      "root": "unique_fashionss_website/backend",
+      "root": "backend",
       "framework": "express"
     },
     "frontend": {
-      "root": "unique_fashionss_website/frontend",
+      "root": "frontend",
       "framework": "vite"
     }
   },
