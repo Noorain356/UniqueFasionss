@@ -9,7 +9,8 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { authDataContext } from "../context/AuthContext";
 import { IoHomeOutline } from "react-icons/io5";
-
+import { HiOutlineCollection } from "react-icons/hi";
+import { MdContacts } from "react-icons/md";
 function Nav() {
     let {setUserData, userData} = useContext(userDataContext)
     let {serverUrl} = useContext(authDataContext)
@@ -82,9 +83,9 @@ function Nav() {
             </div>}
             <div className='w-[100vw] h-[90px] flex items-center justify-between px-[20px] fixed bottom-0 bg-[#191818] md:hidden'>
                <button className='text-[white] flex items-center justify-center flex-col gap-[2px]'><IoHomeOutline className='w-[30px] text-[white] md:hidden' />Home</button>
-                <button className='text-[white] flex items-center justify-center flex-col gap-[2px]'><IoHomeOutline className='w-[30px] text-[white] md:hidden' />Home</button>
-                 <button className='text-[white] flex items-center justify-center flex-col gap-[2px]'><IoHomeOutline className='w-[30px] text-[white] md:hidden' />Home</button>
-                  <button className='text-[white] flex items-center justify-center flex-col gap-[2px]'><IoHomeOutline className='w-[30px] text-[white] md:hidden' />Home</button>
+                <button className='text-[white] flex items-center justify-center flex-col gap-[2px]'><HiOutlineCollection  className='w-[30px] text-[white] md:hidden' />Collections</button>
+                 <button className='text-[white] flex items-center justify-center flex-col gap-[2px]'><MdContacts className='w-[30px] text-[white] md:hidden' />Contact</button>
+                  <button className='text-[white] flex items-center justify-center flex-col gap-[2px]'><CiShoppingCart  className='w-[30px] text-[white] md:hidden' />Cart</button>
             </div>
 
         </div>
