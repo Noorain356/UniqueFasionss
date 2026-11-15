@@ -82,10 +82,10 @@ function Nav() {
             </ul>
             </div>}
             <div className='w-[100vw] h-[90px] flex items-center justify-between px-[20px] fixed bottom-0 bg-[#191818] md:hidden'>
-               <button className='text-[white] flex items-center justify-center flex-col gap-[2px]'><IoHomeOutline className='w-[30px] text-[white] md:hidden' />Home</button>
-                <button className='text-[white] flex items-center justify-center flex-col gap-[2px]'><HiOutlineCollection  className='w-[30px] text-[white] md:hidden' />Collections</button>
-                 <button className='text-[white] flex items-center justify-center flex-col gap-[2px]'><MdContacts className='w-[30px] text-[white] md:hidden' />Contact</button>
-                  <button className='text-[white] flex items-center justify-center flex-col gap-[2px]'><CiShoppingCart  className='w-[30px] text-[white] md:hidden' />Cart</button>
+               <button className='text-[white] flex items-center justify-center flex-col gap-[2px]'><IoHomeOutline className='w-[30px] h-[30px] text-[white] md:hidden' />Home</button>
+                <button className='text-[white] flex items-center justify-center flex-col gap-[2px]'><HiOutlineCollection  className='w-[30px] h-[30px] text-[white] md:hidden' />Collections</button>
+                 <button className='text-[white] flex items-center justify-center flex-col gap-[2px]'><MdContacts className='w-[30px] h-[30px] text-[white] md:hidden' />Contact</button>
+                  <button className='text-[white] flex items-center justify-center flex-col gap-[2px]'><CiShoppingCart  className='w-[35px] h-[35px] text-[white] md:hidden' />Cart</button>
             </div>
 
         </div>
