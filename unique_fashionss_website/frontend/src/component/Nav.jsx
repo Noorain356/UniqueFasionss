@@ -29,32 +29,32 @@ function Nav() {
         }
     }
     return (
-        <div className='w-[100vw] h-[80px] bg-[#FCFBF4] z-10 fixed top-0 flex items-center justify-between px-[1px] md:px-[30px] shadow-md shadow-[#D6B56D] '>
+        <div className='w-full h-[80px] bg-[#FCFBF4] z-10 fixed top-0 flex items-center justify-between px-[1px] md:px-[2px] lg:px-[30px] shadow-md shadow-[#D6B56D] '>
             
-            <div className='-ml-[2px] flex items-center justify-start gap-[4px] md:ml-0 md:gap-[10px]'> <img src={Logo} alt="" className='w-[68px] shrink-0 object-contain md:w-[100px] items-center'/>
-                <h1 className='text-[22px] md:text-[35px] text-[#806044] font-[Poppins] font-semibold'>UniqueFashionss</h1>
+            <div className='w-[30%] shrink-0 flex items-center justify-start gap-[4px] xl:w-[30%] md:w-auto lg:w-auto lg:gap-[10px]'> <img src={Logo} alt="" className='w-[68px] shrink-0 object-contain lg:w-[100px] items-center'/>
+                <h1 className='text-[22px] lg:text-[35px] text-[#806044] font-[Poppins] font-semibold'>UniqueFashionss</h1>
             
 
             </div>
-            <div className='w-[40%] hidden md:flex'>
-                <ul className="flex items-center justify-start gap-[20px] text-[#FCFBF4]">
+            <div className='flex-1 min-w-0 hidden md:flex items-center justify-center'>
+                <ul className="flex items-center justify-center gap-[8px] text-[#FCFBF4] whitespace-nowrap xl:gap-[20px] xl:-translate-x-7">
 
-                    <li className="text-[15px] cursor-pointer bg-[#1A4331] border border-[#C9A227] py-[10px] px-[20px] rounded-2xl transition-all duration-300 hover:bg-[#C9A227] hover:text-[#1A4331]">
+                    <li className="text-[15px] cursor-pointer bg-[#1A4331] border border-[#C9A227] py-[10px] px-[20px] md:px-[12px] lg:px-[16px] xl:px-[20px] rounded-2xl transition-all duration-300 hover:bg-[#C9A227] hover:text-[#1A4331]">
                         HOME
                     </li>
-                    <li className="text-[15px] cursor-pointer bg-[#1A4331] border border-[#C9A227] py-[10px] px-[20px] rounded-2xl transition-all duration-300 hover:bg-[#C9A227] hover:text-[#1A4331]">
+                    <li className="text-[15px] cursor-pointer bg-[#1A4331] border border-[#C9A227] py-[10px] px-[20px] md:px-[12px] lg:px-[16px] xl:px-[20px] rounded-2xl transition-all duration-300 hover:bg-[#C9A227] hover:text-[#1A4331]">
                         COLLECTIONS
                     </li>
-                    <li className="text-[15px] cursor-pointer bg-[#1A4331] border border-[#C9A227] py-[10px] px-[20px] rounded-2xl transition-all duration-300 hover:bg-[#C9A227] hover:text-[#1A4331]">
+                    <li className="text-[15px] cursor-pointer bg-[#1A4331] border border-[#C9A227] py-[10px] px-[20px] md:px-[12px] lg:px-[16px] xl:px-[20px] rounded-2xl transition-all duration-300 hover:bg-[#C9A227] hover:text-[#1A4331]">
                         ABOUT
                     </li>
-                    <li className="text-[15px] cursor-pointer bg-[#1A4331] border border-[#C9A227] py-[10px] px-[20px] rounded-2xl transition-all duration-300 hover:bg-[#C9A227] hover:text-[#1A4331]">
+                    <li className="text-[15px] cursor-pointer bg-[#1A4331] border border-[#C9A227] py-[10px] px-[20px] md:px-[12px] lg:px-[16px] xl:px-[20px] rounded-2xl transition-all duration-300 hover:bg-[#C9A227] hover:text-[#1A4331]">
                         CONTACT
                     </li>
 
                 </ul>
             </div>
-            <div className=" flex items-center justify-end gap-[10px] md:gap-[20px]">
+            <div className="shrink-0 flex items-center justify-end gap-[10px] md:gap-[8px] lg:gap-[14px] xl:gap-[20px] text-[12px]">
                 {!showSearch && <CiSearch className='w-[28px] h-[28px] md:w-[38px] md:h-[38px] text-[#000000] cursor-pointer' onClick={() =>setShowSearch(prev=>!prev)}/>}
                      {showSearch && <RiSearchFill className='w-[28px] h-[28px] md:w-[38px] md:h-[38px] text-[#000000] cursor-pointer' onClick={() =>setShowSearch(prev=>!prev)}/>}
                 {!userData && <CiUser className='relative left-[-2px] w-[28px] h-[28px] md:left-0 md:w-[38px] md:h-[38px] text-[#000000] cursor-pointer' onClick={() =>setShowProfile(prev=>!prev)}/>}
@@ -62,7 +62,7 @@ function Nav() {
                     {userData?.name.slice(0,1)}
                 </div>}
                 <CiShoppingCart className='w-[38px] h-[38px] text-[#000000] cursor-pointer hidden md:block'/>
-                <p className='absolute w-[18px] h-[18px] items-center md:flex justify-center bg-black px-[5px] py-[2px] text-white rounded-full text-[9px] top-[15px] right-[23px] hidden'>10</p>
+                <p className='absolute w-[18px] h-[18px] items-center justify-center bg-black px-[5px] py-[2px] text-white rounded-full text-[9px] top-[15px] right-[12px] md:right-[2px] lg:right-[23px] hidden md:flex'>10</p>
             </div>
             {showSearch &&  <div className='w-[100%] h-[80px] bg-[#789B83] absolute top-[100%] left-0 right-0 flex items-center justify-center'>
                 <input type="text" className='w-[50%] h-[60%] bg-[#233533] rounded-[30px] px-[50px] placeholder:text-white text-[white] text-[18px]' placeholder='Search Here'/>
@@ -81,11 +81,11 @@ function Nav() {
 
             </ul>
             </div>}
-            <div className='w-[100vw] h-[90px] flex items-center justify-between px-[20px] fixed bottom-0 bg-[#191818] md:hidden'>
-               <button className='text-[white] flex items-center justify-center flex-col gap-[2px]'><IoHomeOutline className='w-[30px] h-[30px] text-[white] md:hidden' />Home</button>
-                <button className='text-[white] flex items-center justify-center flex-col gap-[2px]'><HiOutlineCollection  className='w-[30px] h-[30px] text-[white] md:hidden' />Collections</button>
-                 <button className='text-[white] flex items-center justify-center flex-col gap-[2px]'><MdContacts className='w-[30px] h-[30px] text-[white] md:hidden' />Contact</button>
-                  <button className='text-[white] flex items-center justify-center flex-col gap-[2px]'><CiShoppingCart  className='w-[35px] h-[35px] text-[white] md:hidden' />Cart</button>
+            <div className='w-full h-[90px] flex items-center justify-between px-[20px] fixed bottom-0 left-0 bg-[#191818] md:hidden'>
+               <button className='text-[white] flex items-center justify-center flex-col gap-[2px]'><IoHomeOutline className='w-[30px] h-[30px] text-[white] lg:hidden' />Home</button>
+                <button className='text-[white] flex items-center justify-center flex-col gap-[2px]'><HiOutlineCollection  className='w-[30px] h-[30px] text-[white] lg:hidden' />Collections</button>
+                 <button className='text-[white] flex items-center justify-center flex-col gap-[2px]'><MdContacts className='w-[30px] h-[30px] text-[white] lg:hidden' />Contact</button>
+                  <button className='text-[white] flex items-center justify-center flex-col gap-[2px]'><CiShoppingCart  className='w-[35px] h-[35px] text-[white] lg:hidden' />Cart</button>
             </div>
 
         </div>
